@@ -250,19 +250,6 @@
             box-shadow: 0 10px 40px rgba(0, 52, 153, 0.1);
         }
 
-        /* PRICING SECTION */
-        .pricing {
-            background: var(--gray-light);
-        }
-
-        .pricing-note {
-            text-align: center;
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 50px;
-            font-style: italic;
-        }
-
         /* CONTACT SECTION */
         .contact {
             background: var(--white);
@@ -503,7 +490,6 @@
         </div>
     </section>
 
-   
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <div class="container">
@@ -521,8 +507,7 @@
                 </div>
                 <div>
                     <form class="contact-form" name="kontakt" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="kontakt">
-
+                        <input type="hidden" name="form-name" value="kontakt">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -572,7 +557,6 @@
     </footer>
 
     <script>
-
         // Smooth scrolling für Navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
