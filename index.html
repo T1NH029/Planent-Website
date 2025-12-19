@@ -443,7 +443,6 @@
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#benefits">Vorteile</a></li>
-                <li><a href="#pricing">Preise</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -504,17 +503,7 @@
         </div>
     </section>
 
-    <!-- PRICING SECTION -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <h2>Preise</h2>
-            <div class="pricing-note">
-                <p>Individuelle Preisgestaltung basierend auf deinen Anforderungen.</p>
-                <p>Kontaktiere uns für ein maßgeschneidertes Angebot!</p>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <div class="container">
@@ -531,7 +520,9 @@
                     <p>Maik Mertin</p>
                 </div>
                 <div>
-                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <form class="contact-form" name="kontakt" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="kontakt">
+
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
